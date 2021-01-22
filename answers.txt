@@ -1,0 +1,44 @@
+1.- Explain the difference between Unit Tests, Integration Tests, and Acceptance Tests.
+Yo las puedo diferenciar por en el enfoque, el primero se enfoca en una funcionalidad en particular, así como una función agregada a una clase, la función de integración es cómo se desarrolla esa funcionalidad en interacción con otras, como cuando esa función es llamada desde la clase con datos de otra clase, los de aceptación se enfocan en verificar si el historial, hito o bug que desencadenó el cambio se cumple a través de las diferentes funciones agregadas.
+
+2.- How does SCRUM work?
+No he tenido una experiencia en scrum completa, pero por lo que alcanzo a percibir se separa el desarrollo planeado en diferentes hitos priorisando el valor de los interesados, pues el flujo tiene la bondad de ser transparente no solo para el equipo de desarrollo si no para todos los interesados, estos hitos son atacados por lapsos cortos de tiempo permitiendo u obligando a estar enfocados en integracion continua, adeciones de cambios y mejoras entre estos lapsos de tiempo, también veo que celebran diariamente una actualizacion y ajuste de tareas entre el equipo de desarrollo, lo que permite atacar problemas encontrados, encontrar mejoras posteriores y no desenfocar esfuerzos para lograr los entregables.
+
+3.- Explain how Test-Driven Development (TDD) works and why it is important to use it.
+Lo entiendo como una práctica de desarrollo de software, que nos ayuda a enfocar el esfuerzo, ya que nos obliga a que antes de programar debemos crear un test sobre el resultado que esperamos obtener, una vez satisfecha esa prueba podemos refactorizar e incluso seguir con otra funcionalidad adicional, con la seguridad de que se verificará con la suma de los test si hay un cambio significativo hacia las primeras funcionalidades.
+Lo considero importante porque nos ayuda a enfocar el esfuerzo, tener claro lo que falta y lo que falla, un control de calidad hacia funcionalidades anteriores, y nos da seguridad de publicación de cambios
+
+4.- Explain how Continuous Integration and Continuous Delivery works and list its benefits.
+Estas dos prácticas entrelazadas obligan al desarrollador a crear un ecosistema de herramientas y prácticas que le permitan dar a conocer avances en su desarrollo en ciclos de trabajo muy cortos, automatizando así la verificación de seguridad, calidad, documentación y por supuesto el despliegue.
+- Permite la estandarización de herramientas y prácticas
+- Estandariza el control de versiones y documentación
+- Facilita creación de ambientes de pruebas y despliegue
+- Preparado para entregas y revisiones apresuradas
+- Facilita la implementación de test y descubrimiento de fallas
+- Permite unificar estilos de desarrollo y estandarizar sintaxis 
+- Elimina casi por completo la famosa frase de "En mi máquina si funciona!"
+- Permite una coordinación muy buena entre el equipo de desarrollo.
+
+5.- What is the difference between a monolithic application and an application based in
+microservices?
+Entiendo que la diferencia es que el monolítico está enfocado en ser autónomo, tiene la capacidad de manejar todo el flujo de información, la lógica de negocios e incluso la presentación de información por sí sola, Por parte del Microservicio, se enfoca en desplegar una red de pequeños servicios orquestados según las necesidades del usuario, permitiendo una enorme escalabilidad y elimina la dependencia de la tecnología, ya que cada microservicio se rige por un contrato de comunicación pero es independiente en el tecnología que implemento para satisfacerlo
+
+6.- Describe a use case to implement Serverless.
+Pensando que tenemos una aplicación que muestra resultados de miles de encuastas y que se pueden exportar estos resultados, pero a la hora de exportar se tienen que ejecutar una serie de pasos para dar formato, análisis de texto y calcular indicadores, ademas esta acción se puede ejecutar libremente n veces por el n usuarios, en este caso implementar un servicio Serverless es una buena opcion, pues nos permite no saturar el flujo normal de la aplicacion con la enorme carga de la tarea de exportar, se puede desplegar n cantidad de servicios similares , y los recursos utilizados para esa tarea son elasticos por lo que puede designar mas si se trata de una peticion de cientos de miles de respuestas
+
+7.- What are the main DevOps principles ?
+- Centrarce en las necesidades del cliente
+- Entornos de colaboración con todo el equipo no solo de desarrollo
+- Responsabilidad de extremo a extremo
+- Mejora continua sin temor a los errores
+- Diriguir esfuerzos en lo que importa (Automatizar todo lo que se pueda)
+
+8.- What are your 3 favorite open source projects and why ?
+- Snipe-IT - Open Source Asset Management System, de los pocos proyectos donde he puesto a todo el equipo a colaborar para regresar un poco de las bondades que nos dio, sobre todo en traducciones generales, gracias a este software pudimos enlazar una mesa de servicio con un CMDB aplicando correctamente las buenas practicas marcadas por ITIL.
+- Jira-connectors - Un pequeño conector Open Source, para conectar jira con el generador de informes de Google, la primera contribución de Alchimia a la comunidad, está parado pero sigue funcionando, por naturaleza las contribuciones y aplicaciones se ven más en google, llegamos a 150 implementaciones y 10 forks conocidos.
+- Raspberry Pi OS - Soy un apasionado del mundo Maker, y el proyecto Raspberry marcó una pauta, hay muchos y muy buenos SO para SBC's pero la accesibilidad en términos de conocimiento hace que sea mi favorito para presentarle a mi hija este mundo de programación y creación.
+
+9.- List 3 books that have impacted and improved your professional career as a developer.
+- Clean Architecture: A Craftsman's Guide to Software Structure and Design - Robert C. Martin 
+- Domain-Driven Design Distilled - Vaughn Vernon
+- Microservices: Flexible Software Architecture - Eberhard Wolff
