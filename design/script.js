@@ -51,13 +51,12 @@ $(document).ready(function () {
     $("ul.container__list-item").html(newHTML);
   });
 
-  websocket = new WebSocket("ws://localhost:1337");
+  websocket = new WebSocket("ws://localhost:8080");
   websocket.onmessage = function (evt) { onMessage(evt) };
 
 });
 
 function onMessage(evt) {
-  console.log(evt)
   var data = JSON.parse(evt.data);
   if (data.route_id) {
     if (data.status != 'onroute'){
